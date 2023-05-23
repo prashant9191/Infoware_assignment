@@ -1,3 +1,8 @@
+# Installation
+- npm i
+- To start "npm run server" in terminal
+
+
 # Infoware_assignment
 
 Api's for Employee's.
