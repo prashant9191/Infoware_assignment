@@ -8,8 +8,8 @@
 Api's for Employee's.
 
 # 1.To get all Employees
-= http://localhost:3000/employees/getall
-= Method:GET
+- http://localhost:3000/employees/getall
+- Method:GET
 # 2.To get an Employees
 - http://localhost:3000/employees/getone/:id
 - Method:GET
