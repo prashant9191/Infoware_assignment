@@ -2,14 +2,14 @@
 
 Api's for Employee's.
 
-1.To get all Employees
+# 1.To get all Employees
 http://localhost:3000/employees/getall
 Method:GET
-2.To get an Employees
+# 2.To get an Employees
 http://localhost:3000/employees/getone/:id
 Method:GET
 
-3.To create an Employee
+# 3.To create an Employee
 http://localhost:3000/employees/create
 Method:POST
 Body:{
@@ -26,7 +26,7 @@ Body:{
       }
     ]
   }
-4.To update an Employee by replacing whole existing Employee data using id
+# 4.To update an Employee by replacing whole existing Employee data using id
 http://localhost:3000/employees/update/:id
 Method:PUT
 Body:{
@@ -39,14 +39,14 @@ Body:{
       }
     ]
   }
-5.To update an Employee by modifying existing Employee data by patching it using id
+# 5.To update an Employee by modifying existing Employee data by patching it using id
 http://localhost:3000/employees/update/:id
 Method:PATCH
 Body:{
     "name": "Ram charan"
   }
 
-6.To delete an Employee by id
+# 6.To delete an Employee by id
 http://localhost:3000/employees/update/:id
 Method:DELETE
 Body:{
