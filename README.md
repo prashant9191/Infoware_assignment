@@ -7,8 +7,11 @@
 
 Api's for Employee's.
 
-# 1.To get all Employees
+# 1.To get all Employees with limit and pagination (default page=1, limit=10)
 - http://localhost:3000/employees/getall
+- Method:GET
+- or 
+- http://localhost:3000/employees/getall?page=1&limit=1
 - Method:GET
 # 2.To get an Employees
 - http://localhost:3000/employees/getone/:id
@@ -18,14 +21,17 @@ Api's for Employee's.
 - http://localhost:3000/employees/create
 - Method:POST
 - Body:{
-    "name": "Prashant Verma",
-    "designation": "Full-stack Web Developer",
+    "name": "Ankesh Kumar",
+    "jobtitle": "HR",
+    "address":"Kanpur Uttar Pradesh",
     "contacts": [
       {
+        "category":"Primary Emergency Contact",
         "type": "email",
-        "value": "talkprashant9@gmail.com"
+        "value": "ankesh@gmail.com"
       },
       {
+         "category":"Secondary Emergency Contact",
         "type": "phone",
         "value": "9305633194"
       }
@@ -35,12 +41,14 @@ Api's for Employee's.
 - http://localhost:3000/employees/update/:id
 - Method:PUT
 - Body:{
-    "name": "Ankesh Verma",
-    "designation": "Web Developer",
+    "name": "Ankesh shah",
+    "jobtitle":"software developer",
+    "address":"delhi",
     "contacts": [
       {
+        "category":"Primary Emergency Contact",
         "type": "email",
-        "value": "ankesh@gmail.com"
+        "value": "ankesh.verma123@gmail.com"
       }
     ]
   }
@@ -54,6 +62,3 @@ Api's for Employee's.
 # 6.To delete an Employee by id
 - http://localhost:3000/employees/update/:id
 - Method:DELETE
-- Body:{
-    "name": "Ram charan"
-  }
