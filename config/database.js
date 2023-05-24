@@ -3,9 +3,11 @@ const dotenv = require('dotenv');
 dotenv.config();
 const connection = mysql.createConnection({
   host: 'localhost',
-  user:process.env.mysqluserName,
-  password:process.env.mysqlPassword,
-  database: 'infoware', 
+  // user:process.env.mysqluserName,
+  user:'root',
+  password:'root@Hell@9305',
+  // password:process.env.mysqlPassword,
+  database: 'inforwareEmployee', 
 });
 
 connection.connect((err) => {
@@ -19,12 +21,14 @@ connection.connect((err) => {
   const createEmployeeTable = `CREATE TABLE IF NOT EXISTS employees (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
-    designation VARCHAR(255) NOT NULL
+    jobtitle VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL
   )`;
 
   const createContactsTable = `CREATE TABLE IF NOT EXISTS contacts (
     id INT AUTO_INCREMENT PRIMARY KEY,
     employee_id INT NOT NULL,
+    category VARCHAR(50) NOT NULL,
     type VARCHAR(50) NOT NULL,
     value VARCHAR(255) NOT NULL,
     FOREIGN KEY (employee_id) REFERENCES employees(id) ON DELETE CASCADE
