@@ -54,5 +54,5 @@ Body:{
   }
 
 6.To delete an Employee by id
-http://localhost:3000/employees/update/:id
+http://localhost:3000/employees/delete/:id
 Method:DELETE
