@@ -47,6 +47,3 @@ Body:{
 6.To delete an Employee by id
 http://localhost:3000/employees/update/:id
 Method:DELETE
-Body:{
-    "name": "Ram charan"
-  }

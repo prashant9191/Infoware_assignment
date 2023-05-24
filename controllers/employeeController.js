@@ -33,7 +33,6 @@ employeeController.createEmployee = (req, res) => {
 };
 
 // List employees with pagination
-// List employees with pagination
 employeeController.listEmployees = (req, res) => {
   const { page = 1, limit = 10 } = req.query;
   const offset = (page - 1) * limit;
