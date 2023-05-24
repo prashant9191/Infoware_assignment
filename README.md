@@ -1,4 +1,6 @@
 # Installation
+- downlode and unzip 
+- add .env file add these  mysqluserName='yourmySqlusername'; mysqlPassword='yourMyslPassword';
 - npm i
 - To start "npm run server" in terminal
 
